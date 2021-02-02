@@ -37,18 +37,7 @@ class Counter extends React.Component {
   }
 }
   
-const Player = (props) => {
-  return (
-    <div className="player">
-      <span className="player-name">
-        <button className="remove-player" onClick={() => props.removePlayer(props.id)}>✖</button>
-        { props.name }
-      </span>
-
-      <Counter />
-    </div>
-  );
-}
+import Player from './Player';
 
 class App extends React.Component {
   state = {
