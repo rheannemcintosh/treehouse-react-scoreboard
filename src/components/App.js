@@ -1,14 +1,5 @@
 import React from 'react';
 
-const Header = (props) => {
-  return (
-    <header>
-      <h1>{ props.title }</h1>
-      <span className="stats">Players: {props.totalPlayers}</span> 
-    </header>
-  );
-}
-
 class Counter extends React.Component {
   state = { 
     score: 0 
@@ -37,6 +28,7 @@ class Counter extends React.Component {
   }
 }
   
+import Header from './Header';
 import Player from './Player';
 
 class App extends React.Component {
