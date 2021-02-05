@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { PureComponent } from 'react';
 import Counter from './Counter';
 
-const Player = (props) => {
+class Player extends PureComponent {
+    render() { 
         const { 
             name,
             id,
